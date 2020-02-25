@@ -1,7 +1,9 @@
+from doubly_linked_list import DoublyLinkedList
 import sys
 # sys.path.append('../doubly_linked_list')
-sys.path.insert(1, '/home/apetsi/Documents/Projects/lambda/Data-Structures/doubly_linked_list')
-from doubly_linked_list import DoublyLinkedList
+sys.path.insert(
+    1, '/home/apetsi/Documents/Projects/lambda/Data-Structures/doubly_linked_list')
+
 
 class Stack:
     def __init__(self):
@@ -12,7 +14,6 @@ class Stack:
     def push(self, value):
         self.size += 1
         return self.storage.add_to_tail(value)
-        
 
     def pop(self):
         if self.size == 0:
@@ -21,9 +22,9 @@ class Stack:
         return self.storage.remove_from_tail()
 
     def len(self):
-        temp = self.storage.head 
+        temp = self.storage.head
         count = 0
-        while temp is not None: 
+        while temp is not None:
             count = count + 1
             temp = temp.next
-        return count 
+        return count
