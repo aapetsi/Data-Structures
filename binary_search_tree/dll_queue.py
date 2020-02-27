@@ -1,8 +1,6 @@
 from doubly_linked_list import DoublyLinkedList
 import sys
 # sys.path.append('../doubly_linked_list')
-sys.path.insert(
-    1, '/home/apetsi/Documents/Projects/lambda/Data-Structures/doubly_linked_list')
 
 
 class Queue:

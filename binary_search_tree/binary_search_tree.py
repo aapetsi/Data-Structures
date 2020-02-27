@@ -15,7 +15,7 @@ class BinarySearchTree:
         # check if there are no child elements
         if value < self.value:
             if self.left is None:
-               self.left = BinarySearchTree(value)
+                self.left = BinarySearchTree(value)
             else:
                 self.left.insert(value)
         elif value >= self.value:
